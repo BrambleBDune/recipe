@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffaa00;
+    color: #1f1d1d;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #d96b43;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.recipe-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.recipe-card h2 {
+    color: #d96b43;
+    margin-bottom: 10px;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.recipe-section {
+    margin-bottom: 20px;
+}
+
+.recipe-section h3 {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <h1>My Digital Recipe Book</h1>
+        <p>A collection of favorite homemade dishes</p>
+    </header>
+
+    <main class="recipe-container">
+        <!-- Recipe Card Example -->
+        <article class="recipe-card">
+            <h2>Classic Barbecue Pork Ribs</h2>
+            <div class="recipe-meta">
+                <span><strong>Prep Time:</strong> 20 mins</span>
+                <span><strong>Cook Time:</strong> 2 hours</span>
+                <span><strong>Servings:</strong> 4</span>
+            </div>
+            
+            <div class="recipe-section">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>2 racks of pork ribs</li>
+                    <li>1/4 cup brown sugar</li>
+                    <li>2 tbsp paprika</li>
+                    <li>1 tbsp garlic powder</li>
+                    <li>1 cup barbecue sauce</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Preheat oven to 300°F (150°C).</li>
+                    <li>Mix brown sugar, paprika, and garlic powder; rub over the ribs.</li>
+                    <li>Wrap ribs in foil and bake for 1.5 hours.</li>
+                    <li>Unwrap, brush with barbecue sauce, and bake uncovered for 30 minutes.</li>
+                </ol>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Recipe Book</p>
+    </footer>
+
+</body>
+</html>
+
