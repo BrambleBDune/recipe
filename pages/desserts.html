@@ -79,16 +79,34 @@ header {
     <main class="recipe-container">
         <!-- Recipe Card Example -->
 <div class=" vertical-links" style="text-align:center;  font-size: 30px;" >
-    <!--    <a href="https://google.com" class="padded-button" style="background-color: red;color:black">Pumkin Roll</a>
-        <a href="https://reddit.com" class="padded-button" style="background-color: red;color:black">Lemmon Bars</a>
--->
+        <ul id="myList">
+            <li></li>
     
+        </ul>
+   
 </div>
     
 
     <footer>
 <a href="http://recipe.25398387.xyz/index.html" class="homebutt">HOME</a>
     </footer>
+
+        <script>
+  // 1. Get the list element and all of its <li> children
+  const list = document.getElementById('myList');
+  const items = Array.from(list.getElementsByTagName('li'));
+
+  // 2. Sort the elements alphabetically based on their text content
+  items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+  // 3. Clear the current list contents
+  list.innerHTML = '';
+
+  // 4. Append the sorted items back into the list
+  items.forEach(item => list.appendChild(item));
+</script>
+
+        
 
 </body>
 </html>
