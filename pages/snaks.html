@@ -76,10 +76,26 @@ header {
     <main class="recipe-container">
         <!-- Recipe Card Example -->
 <div class="">
-    <ul type=A>
+    <ul id="my list">
         <li><a href="https://recipe.25398387.xyz/pages/sourdough-cookies.html" class="zoop" style="">Sourdough Chocolate Chip Cookies</a></li>
         <li><a href="https://google.com" class="zoop">Double Pits to Chesty</a></li>
  </ol>
+
+
+<script>
+  // 1. Get the list element and all of its <li> children
+  const list = document.getElementById('myList');
+  const items = Array.from(list.getElementsByTagName('li'));
+
+  // 2. Sort the elements alphabetically based on their text content
+  items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+  // 3. Clear the current list contents
+  list.innerHTML = '';
+
+  // 4. Append the sorted items back into the list
+  items.forEach(item => list.appendChild(item));
+</script>
     
 </div>
     
