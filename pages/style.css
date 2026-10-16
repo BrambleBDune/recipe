@@ -85,4 +85,12 @@ header {
     border-radius: 8px;
     cursor: pointer;
   }
+
+li {
+   margin:10px;
+}
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 </style>
