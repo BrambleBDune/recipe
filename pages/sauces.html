@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaks And Treats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffaa00;
+    color: #1f1d1d;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #d96b43;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+} 
+ .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: background-color 0.2s ease;
+    
+}
+ .btn-medium {
+    font-size: 20px;      /* Clear, readable font scale */
+    padding: 10px 20px;  /* 10px top/bottom, 20px left/right */
+ }  
+
+ 
+
+</style>
+
+<body>
+
+    <header>
+        <h1>Snaks & Treats</h1>
+        <p></p>
+    </header>
+
+    <main class="recipe-container">
+        <!-- Recipe Card Example -->
+<div class="">
+    <h3>-Savory-</h3>
+    <ul id="myList">
+        <li><a href="https://recipe.25398387.xyz/recipes/cherry-sauce.html" class="zoop" style="">Cherry Sauce</a></li>
+       
+    </ul>
+    
+    <ul id="myList">
+        <h3>-Sweet-</h3>
+        <!--li><a href="https://recipe.25398387.xyz/" class="zoop" style="">Sauce</a></li-->
+
+
+ </ul>
+
+
+
+    
+</div>
+    
+
+    <footer>
+        <br>
+    <a href="https://recipe.25398387.xyz/index.html" class="homebutt">HOME</a>
+    </footer>
+
+<script>
+  // 1. Get the list element and all of its <li> children
+  const list = document.getElementById('myList');
+  const items = Array.from(list.getElementsByTagName('li'));
+
+  // 2. Sort the elements alphabetically based on their text content
+  items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+  // 3. Clear the current list contents
+  list.innerHTML = '';
+
+  // 4. Append the sorted items back into the list
+  items.forEach(item => list.appendChild(item));
+</script>
+
+</body>
+</html>
